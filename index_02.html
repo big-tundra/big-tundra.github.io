@@ -1,0 +1,2117 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NACO Schedule</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      padding: 20px;
+      background: #fefefe;
+      color: #222;
+    }
+    h1 { font-size: 22px; margin-bottom: 20px; }
+    .filters {
+      margin-bottom: 20px;
+      background: #f0f0f0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .filters select, .filters input, .filters button {
+      font-size: 16px;
+      margin: 5px 10px 5px 0;
+      padding: 5px;
+    }
+    .day-header {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+    .session {
+      background: #f9f9f9;
+      padding: 15px;
+      margin: 12px 0;
+      border-left: 4px solid #2196f3;
+      border-radius: 5px;
+    }
+    .session-title {
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .meta-box {
+      min-width: 160px;
+      flex: 1;
+    }
+    .meta-box .label {
+      font-weight: bold;
+      margin-bottom: 4px;
+      display: block;
+    }
+    .multiline {
+      white-space: pre-line;
+      line-height: 1.4;
+    }
+    summary {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 0;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      body { font-size: 18px; }
+      .meta-row { flex-direction: column; }
+      .filters { font-size: 18px; }
+      .filters select, .filters input, .filters button {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+  
+.session-header {
+  margin-bottom: 10px;
+}
+.session-time {
+  font-size: 18px;
+  font-weight: bold;
+}
+.session-title {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+.session-title {
+  font-weight: bold;
+}
+
+.session {
+  padding: 10px;
+  margin: 0;
+  border-left: none;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+summary {
+  font-size: 30px;
+}
+.session-time {
+  font-size: 20px;
+}
+.multiline {
+  font-size: 14px;
+}
+</style>
+<style>
+.layout-dropdown {
+    margin: 10px 0;
+}
+.layout-dropdown select {
+    padding: 4px;
+    font-size: 14px;
+}
+</style></head>
+<body>
+<h1>NACO Schedule</h1>
+<div class="filters">
+<button id="resetFilters">Reset</button>
+<label style="margin-left:10px;">Day:
+    <select id="dayFilter">
+<option value="all">All Days</option><option value="Thursday">Thursday 7/10</option><option value="Friday">Friday 7/11</option><option value="Saturday">Saturday 7/12</option><option value="Sunday">Sunday 7/13</option><option value="Monday">Monday 7/14</option></select></label>
+<label style="margin-left:10px;">Room:
+    <select id="roomFilter">
+<option value="all">All Rooms</option>
+</select>
+</label>
+<label style="margin-left:10px;">Search:
+    <input id="searchInput" placeholder="Search sessions..." type="text"/>
+</label>
+</div>
+<div id="scheduleContainer">
+<details class="room-group" data-room="103 AB" open="">
+<summary>103 AB</summary>
+<div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">103 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="103 AB" data-search="environment, energy and land use policy steering committee meeting podium mic
+(2) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package charlotte mitchell duyshart" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Environment, Energy and Land Use Policy Steering Committee Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL264 TH 89 (353 total) (89 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) Easel outside room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Charlotte Mitchell Duyshart</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">103 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="103 AB" data-search="midsize county caucus meeting podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package brett mattson" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">Midsize County Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL264 TH 89 (353 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) Easel outside room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Brett Mattson</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="103 AB" data-search="nccae educational workshop podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">NCCAE Educational Workshop</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL264 TH 89 (353 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) Easel outside room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">103 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="103 AB" data-search="ndco annual conference luncheon podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #ffffff;"><div class="session-header"><div class="session-time">12:00 PM</div><div class="session-title">NDCO Annual Conference Luncheon</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 210 TH 32 (242 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) Easel outside room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">103 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="103 AB" data-search="restoring the grid: how to plan for a rapid recovery when disaster strikes podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package jennifer kuiper" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Restoring the Grid: How to Plan for a Rapid Recovery When Disaster Strikes</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 210 TH 32 (242 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) Easel outside room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Jennifer Kuiper</div>
+</div>
+</div></details>
+<details class="room-group" data-room="105 AB" open="">
+<summary>105 AB</summary>
+<div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">105 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="105 AB" data-search="health policy steering committee podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package blaire bryant" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Health Policy Steering Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 with TH for 24 (164 total) (76 reg) -18'x8' stages
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech booth with (2) chairs, (2) 8' resource tables outside of room.
+(1) easel outside room</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Blaire Bryant</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">105 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="105 AB" data-search="business of counties podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package teryn zmuda" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Business of Counties</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 with TH for 24 (164 total) (76 reg) -18'x8' stages
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech booth with (2) chairs, (2) 8' resource tables outside of room.
+(1) easel outside room</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Teryn Zmuda</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="105 AB" data-search="immigration reform task force meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package julia cortina" style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Immigration Reform Task Force Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 with TH for 24 (164 total) (76 reg) -18'x8' stages
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech booth with (2) chairs, (2) 8' resource tables outside of room.
+(1) easel outside room</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Julia Cortina</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">105 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="105 AB" data-search="rural energy communities information and networking breakfast podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package blake gardiner" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Rural Energy Communities Information and Networking Breakfast</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 100 TH 32 (132 total) -18'x8' stages
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech booth with (2) chairs, (2) 8' resource tables outside of room.
+(1) easel outside room</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Blake Gardiner</div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="105 AB" data-search="inferno &amp; intrusion podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package rita reynolds,seamus dowdall" style="background-color: #FBEDED;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">Inferno &amp; Intrusion</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 with TH for 24 (164 total) (76 reg) -18'x8' stages
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech booth with (2) chairs, (2) 8' resource tables outside of room.
+(1) easel outside room</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Rita Reynolds,Seamus Dowdall</div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="105 AB" data-search="national association of county lgbtq leaders &amp; allies meeting podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #ffffff;"><div class="session-header"><div class="session-time">5:00 PM</div><div class="session-title">National Association of County LGBTQ Leaders &amp; Allies Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 with TH for 24 (164 total) (76 reg) -18'x8' stages
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech booth with (2) chairs, (2) 8' resource tables outside of room.
+(1) easel outside room</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">105 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="105 AB" data-search="northeast region caucus meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">Northeast Region Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 with TH for 24 (164 total) (76 reg) -18'x8' stages
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech booth with (2) chairs, (2) 8' resource tables outside of room.
+(1) easel outside room</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div></details>
+<details class="room-group" data-room="106 AB" open="">
+<summary>106 AB</summary>
+<div class="day-header" data-day="Thursday" style="background-color:#C4E3F3;">106 AB - Thursday 7/10</div>
+<div class="session" data-day="Thursday" data-room="106 AB" data-search="economic mobility leadership advisory council meeting none alseta gholston" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">12:00 PM</div><div class="session-title">Economic Mobility Leadership Advisory Council Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Hollow Square for 20ppl</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">None</div></div>
+<div class="meta-box"><span class="label">Contact</span>Alseta Gholston</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">106 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="106 AB" data-search="public benefits administration listening session  shalini wickramatilake" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Public Benefits Administration Listening Session</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Hollow Square for 20ppl</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline"></div></div>
+<div class="meta-box"><span class="label">Contact</span>Shalini Wickramatilake</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">106 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="106 AB" data-search="pn3 in all policies focus group  kat patterson" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">PN3 in All Policies Focus Group</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Hollow Square for 20ppl- BKFST buffet inside room</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline"></div></div>
+<div class="meta-box"><span class="label">Contact</span>Kat Patterson</div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="106 AB" data-search="nccae business luncheon (2) handheld mics " style="background-color: #FBEDED;"><div class="session-header"><div class="session-time">12:30 PM</div><div class="session-title">NCCAE Business Luncheon</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">BQT Rounds for 50ppl</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">(2) handheld mics</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div></details>
+<details class="room-group" data-room="107 AB" open="">
+<summary>107 AB</summary>
+<div class="day-header" data-day="Thursday" style="background-color:#C4E3F3;">107 AB - Thursday 7/10</div>
+<div class="session" data-day="Thursday" data-room="107 AB" data-search="rural leaders for economic mobility meeting and lunch podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package
+power drop: (2) drops with (2) power strips placed on any (2) round tables in the room set for attendees to charge computers. madelaine santana" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">12:00 PM</div><div class="session-title">Rural Leaders for Economic Mobility Meeting and Lunch</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 40 + (1) row of Classroom -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package
+POWER DROP: (2) drops with (2) power strips placed on any (2) round tables in the room set for attendees to charge computers.</div></div>
+<div class="meta-box"><span class="label">Contact</span>Madelaine Santana</div>
+</div>
+</div><div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">107 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="107 AB" data-search="finance, pensions and intergovernmental affairs policy steering committee podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package paige mellerio" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Finance, Pensions and Intergovernmental Affairs Policy Steering Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Paige Mellerio</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">107 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="107 AB" data-search="county executive roundtable  podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package teryn zmuda" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">County Executive Roundtable</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Teryn Zmuda</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="107 AB" data-search="great lakes regional forum meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package ben gilsdorf" style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Great Lakes Regional Forum Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Ben Gilsdorf</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">107 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="107 AB" data-search="county innovations in youth justice podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package ronin davis" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">County Innovations in Youth Justice</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Ronin Davis</div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="107 AB" data-search="confident change leadership in a complex world podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package anuja rathi" style="background-color: #FBEDED;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">Confident Change Leadership in a Complex World</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Rounds for 100 Th 24 -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Anuja Rathi</div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">107 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="107 AB" data-search="america250: county stories, national spirit podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">America250: County Stories, National Spirit</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div>
+<div class="session" data-day="Monday" data-room="107 AB" data-search="new board of directors organizational meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #EFEAF7;"><div class="session-header"><div class="session-time">5:15 PM</div><div class="session-title">New Board of Directors Organizational Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div></details>
+<details class="room-group" data-room="108 AB" open="">
+<summary>108 AB</summary>
+<div class="day-header" data-day="Thursday" style="background-color:#C4E3F3;">108 AB - Thursday 7/10</div>
+<div class="session" data-day="Thursday" data-room="108 AB" data-search="disaster response and recovery training podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package brett mattson" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">1:00 PM</div><div class="session-title">Disaster Response and Recovery Training</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL 240 TH 76 (316 total)-18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Brett Mattson</div>
+</div>
+</div><div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">108 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="108 AB" data-search="transportation policy steering committee podium mic
+(2) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package ben gilsdorf" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Transportation Policy Steering Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL 240 TH 76 (316 total) (110 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Ben Gilsdorf</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">108 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="108 AB" data-search="it standing and futuretech joint meeting podium mic
+(2) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package rita reynolds" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">IT Standing and FutureTech Joint Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL 240 TH 76 (316 total)-18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Rita Reynolds</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="108 AB" data-search="it standing and futuretech meeting podium mic
+(2) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package rita reynolds" style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">IT Standing and FutureTech Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL 240 TH 76 (316 total)-18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Rita Reynolds</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="108 AB" data-search="gulf states counties and parishes caucus meeting podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package charlotte mitchell duyshart" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Gulf States Counties and Parishes Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL 240 TH 76 (316 total)-18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Charlotte Mitchell Duyshart</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">108 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="108 AB" data-search="county forum on revenues and fiscal health podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package paige mellerio,teryn zmuda,jonathan harris" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">County Forum on Revenues and Fiscal Health</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 260 TH 38 -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Paige Mellerio,Teryn Zmuda,Jonathan Harris</div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">108 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="108 AB" data-search="west region caucus meeting podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">West Region Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 260 TH 38 -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div></details>
+<details class="room-group" data-room="109 AB" open="">
+<summary>109 AB</summary>
+<div class="day-header" data-day="Thursday" style="background-color:#C4E3F3;">109 AB - Thursday 7/10</div>
+<div class="session" data-day="Thursday" data-room="109 AB" data-search="county leadership institute alumni meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package anuja rathi" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:00 PM</div><div class="session-title">County Leadership Institute Alumni Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Anuja Rathi</div>
+</div>
+</div><div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">109 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="109 AB" data-search="telecommunications and technology policy steering committee podium mic
+(1) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package seamus dowdall" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Telecommunications and Technology Policy Steering Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) (66 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Seamus Dowdall</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">109 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="109 AB" data-search="southwest border counties forum podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package julia cortina" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Southwest Border Counties Forum</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Julia Cortina</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="109 AB" data-search="leveraging the arts to promote community, resilience and emergency preparedness – hosted by the naco arts &amp; culture commission podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package patrick spence" style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Leveraging the Arts to Promote Community, Resilience and Emergency Preparedness – Hosted by the NACo Arts &amp; Culture Commission</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Patrick Spence</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">109 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="109 AB" data-search="worship service podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">7:00 AM</div><div class="session-title">Worship Service</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="109 AB" data-search="ai in motion podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package rita reynolds,seamus dowdall" style="background-color: #FBEDED;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">AI in Motion</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Rita Reynolds,Seamus Dowdall</div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="109 AB" data-search="california caucus podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #ffffff;"><div class="session-header"><div class="session-time">5:15 PM</div><div class="session-title">California Caucus</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">109 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="109 AB" data-search="data solutions to county service delivery challenges podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package ashleigh holand" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Data Solutions to County Service Delivery Challenges</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Ashleigh Holand</div>
+</div>
+</div></details>
+<details class="room-group" data-room="110 AB" open="">
+<summary>110 AB</summary>
+<div class="day-header" data-day="Thursday" style="background-color:#C4E3F3;">110 AB - Thursday 7/10</div>
+<div class="session" data-day="Thursday" data-room="110 AB" data-search="cli alumni reception none anuja rathi" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">5:30 PM</div><div class="session-title">CLI Alumni Reception</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">40ppl- reception set up.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">None</div></div>
+<div class="meta-box"><span class="label">Contact</span>Anuja Rathi</div>
+</div>
+</div><div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">110 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="110 AB" data-search="lunch discussion: county innovations in addressing sud (by invitation only) podium mic only annie qing,cara hackett" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">12:00 PM</div><div class="session-title">Lunch Discussion: County Innovations in Addressing SUD (by invitation only)</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 40
+podium</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium Mic only</div></div>
+<div class="meta-box"><span class="label">Contact</span>Annie Qing,Cara Hackett</div>
+</div>
+</div></details>
+<details class="room-group" data-room="111 AB" open="">
+<summary>111 AB</summary>
+<div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">111 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="111 AB" data-search="human services and education policy steering committee podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package julia cortina" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Human Services and Education Policy Steering Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) (86 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Julia Cortina</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">111 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="111 AB" data-search="county administrator idea exchange &amp; membership meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #ffffff;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">County Administrator Idea Exchange &amp; Membership Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="111 AB" data-search="veterans &amp; military services committee meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package kevin moore" style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Veterans &amp; Military Services Committee Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Kevin Moore</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="111 AB" data-search="mana naco planning meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package ashleigh holand" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">4:30 PM</div><div class="session-title">Mana NACo Planning Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Ashleigh Holand</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">111 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="111 AB" data-search="communications strategies for county leaders podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package anuja rathi,nicole weissman" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">Communications Strategies for County Leaders</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Anuja Rathi,Nicole Weissman</div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="111 AB" data-search="county administrator idea exchange day 2 podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #FBEDED;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">County Administrator Idea Exchange Day 2</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">111 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="111 AB" data-search="robert's rules 101: mastering the basics podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package anuja rathi" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Robert's Rules 101: Mastering the Basics</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL140 TH24 (164 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs.
+(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Anuja Rathi</div>
+</div>
+</div></details>
+<details class="room-group" data-room="113 AB" open="">
+<summary>113 AB</summary>
+<div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">113 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="113 AB" data-search="agriculture and rural affairs policy steering committee meeting podium mic
+(2) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package owen hart" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Agriculture and Rural Affairs Policy Steering Committee Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL264 TH 89 (353 total)  (100 reg)-18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) Easel outside room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Owen Hart</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">113 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="113 AB" data-search="membership committee podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package grace dunlap,priscila chrappah" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Membership Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL264 TH 89 (353 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) Easel outside room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Grace Dunlap,Priscila Chrappah</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="113 AB" data-search="minnesota delegation caucus podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">4:30 PM</div><div class="session-title">Minnesota Delegation Caucus</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL264 TH 89 (353 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) Easel outside room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">113 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="113 AB" data-search="county forum on economies and workers podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package abby davidson,alseta gholston" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">County Forum on Economies and Workers</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 260  -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) easel
+Fireside chat set-up on other side of podium: 2 comfy chairs with small table between (for notes, water),</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Abby Davidson,Alseta Gholston</div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">113 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="113 AB" data-search="update on county federal policy priorities podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package mark ritacco" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Update on County Federal Policy Priorities</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 260  -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table and (2) chairs
+(4) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Mark Ritacco</div>
+</div>
+</div></details>
+<details class="room-group" data-room="201 ABC" open="">
+<summary>201 ABC</summary>
+<div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">201 ABC - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="201 ABC" data-search="community, economic and workforce development policy steering committee podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package michael matthews,eryn hurley" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Community, Economic and Workforce Development Policy Steering Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL224 TH 280 (504 total) (154 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(6) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Michael Matthews,Eryn Hurley</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">201 ABC - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="201 ABC" data-search="rural action caucus meeting podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package owen hart" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">Rural Action Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL224 TH 280 (504 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(6) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Owen Hart</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="201 ABC" data-search="international economic development task force meeting podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package
+note (1) speaker will be zoomed into the meeting and displayed on the screen. jack callahan" style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">International Economic Development Task Force Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL224 TH 280 (504 total) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(6) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package
+NOTE (1) speaker will be zoomed into the meeting and displayed on the screen.</div></div>
+<div class="meta-box"><span class="label">Contact</span>Jack Callahan</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">201 ABC - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="201 ABC" data-search="county forum on public lands all day recording 
+podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio patch to record segments of the program. 
+power drop: (1) drop to riser for camera operator zeke lee,gregory nelson" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">County Forum on Public Lands</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 300 TH?? -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+Riser for camera and operator (6) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">ALL DAY RECORDING 
+Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio patch to record segments of the program. 
+POWER DROP: (1) drop to riser for camera operator</div></div>
+<div class="meta-box"><span class="label">Contact</span>Zeke Lee,Gregory Nelson</div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">201 ABC - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="201 ABC" data-search="south region caucus meeting podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">South Region Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Mixture of Theatre and rounds TBD (715reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(6) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div></details>
+<details class="room-group" data-room="202 AB" open="">
+<summary>202 AB</summary>
+<div class="day-header" data-day="Thursday" style="background-color:#C4E3F3;">202 AB - Thursday 7/10</div>
+<div class="session" data-day="Thursday" data-room="202 AB" data-search="workforce network advisory council meeting and lunch podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package anuja rathi,carlos greene" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">11:30 AM</div><div class="session-title">Workforce Network Advisory Council Meeting and Lunch</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 50
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head table of (4ppl)
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Anuja Rathi,Carlos Greene</div>
+</div>
+</div><div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">202 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="202 AB" data-search='audit committee
+ podium mic
+(1) lcd packages
+(2) tabletop mics
+(3) wireless mics on stands for q&amp;a
+audio package
+power drop: (2) drops to (2) cocktail round for (2) "owls" janet fernandes,danny melgoza' style="background-color: #ffffff;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">Audit Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape 40
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head table of (4ppl)
+(1) easel
+add tall (2) cocktail round inside U shape for client owned owls.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(3) wireless mics on stands for Q&amp;A
+Audio Package
+POWER DROP: (2) drops to (2) cocktail Round for (2) "Owls"</div></div>
+<div class="meta-box"><span class="label">Contact</span>Janet Fernandes,Danny Melgoza</div>
+</div>
+</div>
+<div class="session" data-day="Friday" data-room="202 AB" data-search='finance committee lunch podium mic
+(1) lcd packages
+(2) tabletop mics
+(3) wireless mics on stands for q&amp;a
+audio package
+power drop: (2) drops to (2) cocktail round for (2) "owls" janet fernandes,danny melgoza' style="background-color: #FEF1E9;"><div class="session-header"><div class="session-time">11:30 AM</div><div class="session-title">Finance Committee Lunch</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape 40
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head table of (4ppl)
+(1) easel
+add tall (2) cocktail round inside U shape for client owned owls.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(3) wireless mics on stands for Q&amp;A
+Audio Package
+POWER DROP: (2) drops to (2) cocktail Round for (2) "Owls"</div></div>
+<div class="meta-box"><span class="label">Contact</span>Janet Fernandes,Danny Melgoza</div>
+</div>
+</div>
+<div class="session" data-day="Friday" data-room="202 AB" data-search='executive committee podium mic
+(1) lcd packages
+(2) tabletop mics
+(3) wireless mics on stands for q&amp;a
+audio package
+power drop: (2) drops to (2) cocktail round for (2) "owls" marc chavez' style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:00 PM</div><div class="session-title">Executive Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape 40
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head table of (4ppl)
+(1) easel
+add tall (2) cocktail round inside U shape for client owned owls.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(3) wireless mics on stands for Q&amp;A
+Audio Package
+POWER DROP: (2) drops to (2) cocktail Round for (2) "Owls"</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div>
+<div class="session" data-day="Friday" data-room="202 AB" data-search="national association of county administrators (naca) board meeting (by invitation only) podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #FEF1E9;"><div class="session-header"><div class="session-time">5:00 PM</div><div class="session-title">National Association of County Administrators (NACA) Board Meeting (by invitation only)</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape 40
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head table of (4ppl)
+(1) easel
+add tall (2) cocktail round inside U shape for client owned owls.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">202 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="202 AB" data-search="programs &amp; services committee meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package ashleigh holand" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Programs &amp; Services Committee Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 60
+Podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head table of (4ppl)
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Ashleigh Holand</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="202 AB" data-search="national association of civil county attorneys (nacca) meeting existing " style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">National Association of Civil County Attorneys (NACCA) Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Affiliate</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Existing</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="202 AB" data-search="reception for criminal justice leaders and mental health advocates podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package cara hackett" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">4:30 PM</div><div class="session-title">Reception for Criminal Justice Leaders and Mental Health Advocates</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 60
+Add scattered cocktail tables
+Podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head table of (4ppl)
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Cara Hackett</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">202 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="202 AB" data-search="disaster task force meeting podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #ffffff;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">Disaster Task Force Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape for 40
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(2) Comfy Chairs
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">202 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="202 AB" data-search="florida delegates caucus podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Florida Delegates Caucus</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">HS 36
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div>
+<div class="session" data-day="Monday" data-room="202 AB" data-search="public health listening session podium mic
+(1) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package shalini wickramatilake" style="background-color: #EFEAF7;"><div class="session-header"><div class="session-time">12:00 PM</div><div class="session-title">Public Health Listening Session</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">HS 36
+podium
+12'x8' stage (2) risers
+stairs on each side of stage -(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Shalini Wickramatilake</div>
+</div>
+</div></details>
+<details class="room-group" data-room="203 AB" open="">
+<summary>203 AB</summary>
+<div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">203 AB - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="203 AB" data-search="policy coordinating committee meeting #1 podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package mark ritacco" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:30 AM</div><div class="session-title">Policy Coordinating Committee Meeting #1</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape for 30
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Mark Ritacco</div>
+</div>
+</div>
+<div class="session" data-day="Friday" data-room="203 AB" data-search="policy coordinating committee meeting #2 podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package eryn hurley" style="background-color: #FEF1E9;"><div class="session-header"><div class="session-time">5:00 PM</div><div class="session-title">Policy Coordinating Committee Meeting #2</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape for 30
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Eryn Hurley</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">203 AB - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="203 AB" data-search="retirement readiness advisory council meeting podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package carlos greene" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Retirement Readiness Advisory Council Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape for 30 with 20 additional chairs along the wall
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Carlos Greene</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="203 AB" data-search="national association of county human services administrators (nachsa) meeting podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">National Association of County Human Services Administrators (NACHSA) Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape for 30 with 20 additional chairs along the wall
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="203 AB" data-search="credentials committee meeting podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package priscila chrappah" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">Credentials Committee Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape for 30 leave additional chairs from previous mtg- podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Priscila Chrappah</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="203 AB" data-search="iowa caucus meeting podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">5:30 PM</div><div class="session-title">Iowa Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">U shape for 30 leave additional chairs from previous mtg- podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">203 AB - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="203 AB" data-search="north carolina association of black county officials business meeting podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:00 AM</div><div class="session-title">North Carolina Association of Black County Officials Business Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">NEW MTG ADDED: Rounds for 50 leave additional chairs from previous mtg- podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="203 AB" data-search="national association of county intergovernmental officials business meeting podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package " style="background-color: #FBEDED;"><div class="session-header"><div class="session-time">12:00 PM</div><div class="session-title">National Association of County Intergovernmental Officials Business Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Rounds for 50 leave additional chairs from previous mtg- podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span></div>
+</div>
+</div>
+<div class="session" data-day="Sunday" data-room="203 AB" data-search="achievement award winner holding room  miranda morvay" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">2:00 PM</div><div class="session-title">Achievement Award Winner Holding Room</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Existing setup</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline"></div></div>
+<div class="meta-box"><span class="label">Contact</span>Miranda Morvay</div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">203 AB - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="203 AB" data-search="nationwide partners breakfast podium mic
+(1) lcd packages
+(2) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package beth roberts" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">Nationwide Partners Breakfast</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 50 leave additional chairs
+podium
+12'x8' stage (2) risers
+stairs on each side of stage
+(1) Head tables of (4ppl)
+(1) Easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD packages
+(2) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Beth Roberts</div>
+</div>
+</div></details>
+<details class="room-group" data-room="204 ABC" open="">
+<summary>204 ABC</summary>
+<div class="day-header" data-day="Thursday" style="background-color:#C4E3F3;">204 ABC - Thursday 7/10</div>
+<div class="session" data-day="Thursday" data-room="204 ABC" data-search="cio speed sharing  podium mic
+(2) lcd packages
+(5) wireless mics
+sound
+confidence monitor rita reynolds" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:00 AM</div><div class="session-title">CIO Speed Sharing</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS
+150??ppl cking with Rita team
+18'x8' stages (3) risers
+stairs on each side of stage
+(5) Comfy Chairs
+podium stage right
+(18) resource tables on side of room for exhibits
+layout the best fit scenario on the sides of the room.
+ (1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(5) wireless mics
+Sound
+confidence monitor</div></div>
+<div class="meta-box"><span class="label">Contact</span>Rita Reynolds</div>
+</div>
+</div>
+<div class="session" data-day="Thursday" data-room="204 ABC" data-search="technology innovation forum podium mic
+(2) lcd packages
+(5) wireless mics
+sound
+confidence monitor rita reynolds" style="background-color: #E6F4FA;"><div class="session-header"><div class="session-time">10:30 AM</div><div class="session-title">Technology Innovation Forum</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS
+150??ppl cking with Rita team
+18'x8' stages (3) risers
+stairs on each side of stage
+(5) Comfy Chairs
+podium stage right
+(18) resource tables on side of room for exhibits
+layout the best fit scenario on the sides of the room.
+ (1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(5) wireless mics
+Sound
+confidence monitor</div></div>
+<div class="meta-box"><span class="label">Contact</span>Rita Reynolds</div>
+</div>
+</div><div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">204 ABC - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="204 ABC" data-search="justice and public safety policy steering committee podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package brett mattson" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Justice and Public Safety Policy Steering Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL224 TH 280 (504 total) (114 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(6) 8' resource tables along back/side walls of room.
+ (1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Brett Mattson</div>
+</div>
+</div>
+<div class="session" data-day="Friday" data-room="204 ABC" data-search="intergovernmental affairs forum with the fifa world cup 2026 podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package rick hart" style="background-color: #FEF1E9;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">Intergovernmental Affairs Forum with the FIFA World Cup 2026</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL224 TH 280 (504 total) (114 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(6) 8' resource tables along back/side walls of room.
+ (1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Rick Hart</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">204 ABC - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="204 ABC" data-search="large urban county caucus meeting podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package blaire bryant" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">10:00 AM</div><div class="session-title">Large Urban County Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL224 TH 280 (504 total) (114 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(6) 8' resource tables along back/side walls of room.
+ (1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Blaire Bryant</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="204 ABC" data-search="naco 2nd vice president candidates forum podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">4:45 PM</div><div class="session-title">NACo 2nd Vice President Candidates Forum</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL224 TH 280 (504 total) (114 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(1) tech table with (2) chairs
+(6) 8' resource tables along back/side walls of room.
+ (1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">204 ABC - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="204 ABC" data-search="county forum on health and wellbeing podium mic
+(2) lcd packages
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package elise simonsen,shalini wickramatilake" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">County Forum on Health and Wellbeing</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 250 TH in back -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium -(2) 8' resource tables along back/side walls of room.
+(1) easel
+Artist will be in the room at Noon.
+ For the visual artist, we need a chair and a high top or a small table for supplies.
+Can be placed in the break at 11:30 or just there all day is fine.
+Need to set him up.
+ For his space for the board, he will need "No less than 8 feet of wall space with no textures, ridges or borders and permission to hang paper.
+OR 10 x 4 foot workspace where speakers can be seen participants can see it and heard." I'd like him near the stage so live.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Elise Simonsen,Shalini Wickramatilake</div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">204 ABC - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="204 ABC" data-search="central region caucus meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">Central Region Caucus Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 250 and max out in theatre- (385 reg) 18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium -(2) 8' resource tables along back/side walls of room.
+(1) easel</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div></details>
+<details class="room-group" data-room="Ballroom A" open="">
+<div class="room-section" data-room="Ballroom A"><div class="layout-dropdown"><label>View Layout:</label><select onchange="if(this.value) window.open(this.value, '_blank')"><option selected="True">-- Select a layout --</option><option value="url">name</option><option value="url">name</option></select></div><summary>Ballroom A</summary></div>
+<div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">Ballroom A - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="Ballroom A" data-search="public lands policy steering committee podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package zeke lee" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">Public Lands Policy Steering Committee</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Hollow Square 100 (71 reg) -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(6) 8' resource tables along back/side walls of room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Zeke Lee</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">Ballroom A - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="Ballroom A" data-search="wir board of directors meeting podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package zeke lee" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">WIR Board of Directors Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Hollow Square 100 -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(6) 8' resource tables along back/side walls of room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Zeke Lee</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">Ballroom A - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="Ballroom A" data-search="naco edge trivia podium mic
+(1) lcd package
+(4) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package beth roberts" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">1:30 PM</div><div class="session-title">NACo EDGE Trivia</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">RDS 100 -18'x8' stages (3) risers
+stairs on each side of stage
+(2) Head tables of (4ppl)
+each placed to the left and right of a center podium
+(6) 8' resource tables along back/side walls of room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(1) LCD package
+(4) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Beth Roberts</div>
+</div>
+</div></details>
+<details class="room-group" data-room="Ballroom B" open="">
+<div class="room-section" data-room="Ballroom B"><div class="layout-dropdown"><label>View Layout:</label><select onchange="if(this.value) window.open(this.value, '_blank')"><option selected="True">-- Select a layout --</option><option value="url">name</option><option value="url">name</option></select></div><summary>Ballroom B</summary></div>
+<div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">Ballroom B - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="Ballroom B" data-search="leading through crisis podium mic
+(2) lcd packages
+(8) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez,leah rivera" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:00 AM</div><div class="session-title">Leading Through Crisis</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL180
+Chevron per diagram provided -30'x8' stages (6) risers
+stairs on each side of stage
+(2) Head tables of (6ppl)
+each placed to the left and right of a center podium
+(8) 8' resource tables placed in the back of the room.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(8) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez,Leah Rivera</div>
+</div>
+</div>
+<div class="session" data-day="Saturday" data-room="Ballroom B" data-search="naco board of directors forum podium mic
+(2) lcd packages
+(8) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #EDF6EC;"><div class="session-header"><div class="session-time">2:30 PM</div><div class="session-title">NACo Board of Directors Forum</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL180
+Chevron per diagram provided -30'x8' stages (6) risers
+stairs on each side of stage
+(2) Head tables of (6ppl)
+each placed to the left and right of a center podium
+(8) 8' resource tables placed in the back of the room.
+NEED BARSTOOLS FOR FIRESIDE CHAT</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(8) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">Ballroom B - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="Ballroom B" data-search="naco board of directors meeting podium mic
+(2) lcd packages
+(8) tabletop mics
+(2) wireless mics on stands for q&amp;a
+audio package marc chavez" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:00 AM</div><div class="session-title">NACo Board of Directors Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">CL180
+Chevron per diagram provided -30'x8' stages (6) risers
+stairs on each side of stage
+(2) Head tables of (6ppl)
+each placed to the left and right of a center podium
+(8) 8' resource tables placed in the back of the room.
+NEED BARSTOOLS FOR FIRESIDE CHAT</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Podium mic
+(2) LCD packages
+(8) tabletop mics
+(2) wireless mics on stands for Q&amp;A
+Audio Package</div></div>
+<div class="meta-box"><span class="label">Contact</span>Marc Chavez</div>
+</div>
+</div></details>
+<details class="room-group" data-room="Hall B" open="">
+<summary>Hall B</summary>
+<div class="day-header" data-day="Friday" style="background-color:#FCE4D6;">Hall B - Friday 7/11</div>
+<div class="session" data-day="Friday" data-room="Hall B" data-search="general session set up marx leah rivera" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">8:00 AM</div><div class="session-title">General Session Set Up</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Rounds, 1500 plus 300 in theatre
+See Marx Diagram
+GREEN ROOM: Add (2) rounds with linen and (6) chairs at each table.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Marx</div></div>
+<div class="meta-box"><span class="label">Contact</span>Leah Rivera</div>
+</div>
+</div><div class="day-header" data-day="Saturday" style="background-color:#D9EAD3;">Hall B - Saturday 7/12</div>
+<div class="session" data-day="Saturday" data-room="Hall B" data-search="opening luncheon and general session marx jack peterson,leah rivera" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">12:15 PM</div><div class="session-title">Opening Luncheon and General Session</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Rounds, 1500 plus 300 in theatre
+See Marx Diagram
+GREEN ROOM: Add (2) rounds with linen and (6) chairs at each table.
+
+NACo STEP N REPEAT FOR GREEN ROOM.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Marx</div></div>
+<div class="meta-box"><span class="label">Contact</span>Jack Peterson,Leah Rivera</div>
+</div>
+</div><div class="day-header" data-day="Sunday" style="background-color:#F4CCCC;">Hall B - Sunday 7/13</div>
+<div class="session" data-day="Sunday" data-room="Hall B" data-search="general session marx jack peterson,leah rivera" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">3:15 PM</div><div class="session-title">General Session</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Theater for 2200-3501 TBD per Wendy
+See Marx Diagram
+GREEN ROOM: Add (2) rounds with linen and (6) chairs at each table.
+
+NACo STEP N REPEAT FOR GREEN ROOM.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Marx</div></div>
+<div class="meta-box"><span class="label">Contact</span>Jack Peterson,Leah Rivera</div>
+</div>
+</div><div class="day-header" data-day="Monday" style="background-color:#D9D2E9;">Hall B - Monday 7/14</div>
+<div class="session" data-day="Monday" data-room="Hall B" data-search="naco annual business meeting marx jack peterson" style="background-color: #ffffff;"><div class="session-header"><div class="session-time">9:30 AM</div><div class="session-title">NACo Annual Business Meeting</div></div>
+<div class="meta-row">
+<div class="meta-box"><span class="label">Setup</span><div class="multiline">Theater for 2200
+See Marx Diagram
+GREEN ROOM: Add (2) rounds with linen and (6) chairs at each table.</div></div>
+<div class="meta-box"><span class="label">Gear</span><div class="multiline">Marx</div></div>
+<div class="meta-box"><span class="label">Contact</span>Jack Peterson</div>
+</div>
+</div></details>
+</div>
+<script>
+const roomFilter = document.getElementById("roomFilter");
+const dayFilter = document.getElementById("dayFilter");
+
+const roomSet = new Set();
+document.querySelectorAll('.session').forEach(div => roomSet.add(div.dataset.room));
+[...roomSet].sort().forEach(room => {
+    const opt = document.createElement('option');
+    opt.value = room;
+    opt.textContent = room;
+    roomFilter.appendChild(opt);
+});
+
+function applyFilters() {
+    const selectedRoom = roomFilter.value;
+    const selectedDay = dayFilter.value;
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+
+    document.querySelectorAll('.session').forEach(session => {
+        const matchRoom = selectedRoom === "all" || session.dataset.room === selectedRoom;
+        const matchSearch = session.dataset.search.includes(searchTerm);
+        const matchDay = selectedDay === "all" || session.dataset.day === selectedDay;
+        session.style.display = (matchRoom && matchSearch && matchDay) ? "" : "none";
+    });
+
+    document.querySelectorAll('.day-header').forEach(header => {
+        const day = header.dataset.day;
+        const container = header.parentElement;
+        const sessions = container.querySelectorAll(`.session[data-day='${day}']`);
+        const anyVisible = [...sessions].some(s => s.style.display !== "none");
+        header.style.display = anyVisible ? "" : "none";
+    });
+
+    document.querySelectorAll('details.room-group').forEach(group => {
+        const visibleSessions = group.querySelectorAll('.session');
+        const anyVisible = [...visibleSessions].some(s => s.style.display !== "none");
+        group.style.display = anyVisible ? "" : "none";
+    });
+}
+
+document.getElementById("resetFilters").addEventListener("click", () => {
+    roomFilter.value = "all";
+    dayFilter.value = "all";
+    document.getElementById("searchInput").value = "";
+    applyFilters();
+});
+
+roomFilter.addEventListener("change", applyFilters);
+dayFilter.addEventListener("change", applyFilters);
+document.getElementById("searchInput").addEventListener("input", applyFilters);
+
+applyFilters();
+</script>
+</body>
+</html>
